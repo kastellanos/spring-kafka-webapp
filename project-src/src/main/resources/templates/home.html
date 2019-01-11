@@ -20,8 +20,12 @@
 				$(function() {
 				    $.each(response, function(i, item) {
 				        var $tr = $('<tr>').append(
-				            $('<td>').text(item.name),
-				            $('<td>').text(item.content),
+				            $('<td>').text(item.Ville),
+				            $('<td>').text(item.Pays),
+				            $('<td>').text(item.Distance),
+				            $('<td>').text(item.Température),
+				            $('<td>').text(item.Humidité),
+				            $('<td>').text(item.Précipitation),
 				            
 				        ); //.appendTo('#records_table');
 				        $('#tdata').append($tr);
@@ -39,14 +43,22 @@
     <table class="table table-bordered">
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Content</th>
+        <th>Ville</th>
+        <th>Pays</th>
+        <th>Distance</th>
+        <th>Température</th>
+        <th>Humidité</th>
+        <th>Précipitation</th>
       </tr>
     </thead>
     <tbody id="tdata">
       <tr>
-        <td>John</td>
-        <td>Doe</td>
+	<td>exemple_ville</td>
+        <td>exemple_pays</td>
+        <td>exemple_distance</td>
+        <td>exemple_température</td>
+        <td>exemple_humidité</td>
+        <td>exemple_précipitation</td>
       </tr>
 
     </tbody>
