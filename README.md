@@ -47,5 +47,5 @@ And receive information from livetemperature topic
 So to the the Results page send info like that
 
 ```
-echo [{\"uno\":\"dos\"}] | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic livetemperature > /dev/null
+echo [{\"name\":\"Ciudad 1\",\"content\":\"Ciudad bonita\"}] | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic livetemperature > /dev/null
 ```
